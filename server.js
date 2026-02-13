@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 const path = require('path');
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(cors({
-    origin: 'http://localhost:5173', // Vite default port
+    origin: 'https://renton-frontend.vercel.app', // Vite default port
     credentials: true
 }));
 app.use(cookieParser());
